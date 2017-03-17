@@ -7,7 +7,7 @@ var app = express();
   app.use('/js', express.static(__dirname + '/js'));		 
   app.use('/img', express.static(__dirname + '/img'));		
   app.use('/views', express.static(__dirname + '/views'));
-  app.use(express.static(path.join(__dirname, 'node_modules')));
+  app.use('/node_modules',express.static(__dirname +'/node_modules'));
 
 
 
