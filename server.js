@@ -3,7 +3,7 @@ var app = express();
 
 // Para llamar los archivos css y js públicos desde tu index.html debes
 // declarar las rutas como estáticas de la siguiente forma
--app.use('/css', express.static(__dirname + '/css'));		
+ app.use('/css', express.static(__dirname + '/css'));		
   app.use('/js', express.static(__dirname + '/js'));		 
   app.use('/img', express.static(__dirname + '/img'));		
   app.use('/views', express.static(__dirname + '/views'));
